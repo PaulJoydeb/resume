@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, li{
+    font-size: 20px;
+}
+.main{
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+.info{
+    float: left;
+}
+
+.img{
+    float: right;
+}
+.header::after{
+    content: "";
+   clear: both;
+   display: table;
+}
+
+.margin{
+    margin-top: 30px;
+}
+
+.margin p{
+    margin-top: 20px;
+}
+
+.education table{
+    width: 90%;
+    height: 200px;
+    margin: auto;    
+}
+
+.education table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+
+.common table{
+    width: 70%;
+    margin: auto;
+}
+
+.common table, th, td{
+    text-align: left;
+    border: none;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+
+.left{
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 600px){
+    .info{
+        width: 70%;
+        float: left;
+    }
+    .img{
+        width: 30%;
+        float: right;
+    }
+
+    .education table{
+        width: 80%;
+    }
+    .common table{
+        width: 100%;
+    }
+}
